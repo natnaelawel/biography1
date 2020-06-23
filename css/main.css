@@ -1,0 +1,509 @@
+
+@media only screen and (min-width: 320px){
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(16, 19, 19, 0.843);
+}
+nav{ 
+    height: 80px;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+.nav-logo{
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+}
+.nav-logo img{
+    width:100%;
+    height: 100%;
+}
+a.menu-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 20%;
+    line-height: 70px;
+    padding-right: 30px;
+    font-size: 2rem;
+    text-align: right;
+}
+.nav-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.nav-logo {
+    float: left;
+}
+.nav-link a.active{
+    color: #00bcd4;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+} 
+.nav-link a{
+    color: #727272;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 5px solid transparent;
+    text-transform: uppercase;
+    background-color: transparent;
+    line-height: 75px;
+    transition: all 0.5s ease-out;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none; 
+    display: none;
+} 
+a.menu-icon{
+    display: block;
+}
+.home-content{
+    font-family: 'Roboto', sans-serif;
+    height: calc(80% + 40px);
+    text-transform: capitalize;
+    text-shadow: 0 3px 8px #00bcd4;
+    text-align: center;
+    vertical-align: middle;
+    line-height: calc(80% + 40px);
+    position: relative;
+    color: rgb(189, 186, 186);
+    background-image: url("../images/coding.jpg");
+    background-size: 100% 120%; 
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+}
+.home-content h2{
+    position: absolute;
+    bottom: 40%;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem; 
+    color: white; 
+}
+.home-content a{
+    text-decoration: none;
+    background: #00bcd4;
+    padding: 20px 30px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,1);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 120vh;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    margin-top: 20px; 
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-direction: column;
+}
+.my-story{
+        width:100%;
+        padding: 2%;
+    }
+.my-story h2, .my-info h2{
+    font-size: 1.8rem;
+    color: #00bcd4;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}  
+.my-story p, .my-info p{
+        color: #727272;
+        font-size: 14px;
+        line-height: 28px;
+    }
+.my-story{
+    width: 100%;
+}
+.my-info{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}   
+.my-info div.photo-figure{
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+    width: 50%;
+    height: 100%;
+    }
+.my-info img{
+    width: 100%;
+    height: 100%;
+}
+.my-info div.info-text{
+        width: 100%; 
+        padding-left: 40px;
+    }
+.my-skill h2.skill-header,section.education h2, .contact-us h2{
+    color: #323333;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30%;
+    vertical-align: middle;
+} 
+.skill-status{
+    display: flex;
+    flex-direction: column;
+    }
+.skill-status div.skill-list{
+    display: flex;
+    flex-direction: column;
+    /* height: 80%; */
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 3px 6px rgb(129, 120, 120);
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+.skill-status div.skill-list h2{
+    line-height: 50px;
+    flex: 3;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #00bcd4;
+}
+.skill-status div div.status{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    display: block;
+    flex: 6;
+}
+.status div.percentage{
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    margin:10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.status div.percentage div{
+    display: inline-block;
+    height: inherit;
+    background-color: #00bcd4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.status div.percentage div.div1{
+    width: 85%;
+}
+.status div.percentage div.div2{
+    width: 82%;
+}
+.status div.percentage div.div3{
+    width: 80%;
+}
+.status div.percentage div.div4{
+    width: 76%;
+}
+.status div.percentage div.div5{
+    width: 79%;
+}
+.status div.percentage div.div6{
+    width: 83%;
+}
+.status div.percentage div.div7{
+    width: 91%;
+}
+.status div.percentage div.div8{
+    width: 89%;
+}
+.status div.percentage span{
+    float: right;
+    margin-right: 10px;
+    height: inherit;
+    text-align: center;
+    line-height: inherit;
+    vertical-align: middle;
+    font-size: 20px;
+    color: white;
+}
+.school-status{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+div.school-status div{
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgb(129, 120, 120);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+div.school-status div :first-child{
+    color: #00bcd4;
+}
+div.school-status div h3,div.school-status div h4{
+    padding-left: 20px;
+}
+div.school-status div :last-child{
+    color: #00bcd4;
+    text-align: right;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.contact-us{
+    background-color: #00bcd4;
+    width: 100%;
+    padding: 20px 10px;
+}
+ .contact-us .contact-body{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.contact-body h2.contact-header{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul li {
+    display: flex;
+    align-items: center;
+}
+.contact-body div{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact-body div form input,.contact-body div form textarea {
+    display: block;
+    width: 100%;
+    padding:15px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: black;
+    font-family: 'Roboto', 'Gill Sans',sans-serif;
+}
+.contact-body div form button{
+    width: 20%;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #05971b;
+    color: white;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.fa {
+    padding: 13px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #00bcd4;
+}
+.contact-body .fa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 10px 40px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #323333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+footer div.upper-footer{
+    height: 150px;
+    width: 100%;
+}
+footer div.copy-right{
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    background-color: #2a2a2a;
+}
+    
+footer h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+}
+footer div .social-media{
+    text-align: center;
+    height: 70px;
+}
+footer div .fa{
+    display: inline-flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+}   
+}
+
+@media only screen and (min-width: 768px){
+    .nav-link a:hover{
+        border-bottom: 5px solid #00bcd4;
+    } 
+    .nav-logo{
+        display: none;
+    }
+    .nav-link a{
+        display: flex;
+    }
+    a.menu-icon{
+        display: none;
+    }
+    .home-content h2{
+        font-size: 2.0rem;
+    }
+    .home-content a{
+        width: 15%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .my-story,.my-info{
+        width: 100%;
+    }
+    .my-info div.photo-figure{
+        width: 50%;
+    }
+    .my-info div.info-text{
+        width: 100%;
+    }
+    div.school-status div{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+    }
+    .my-skill h2.skill-header,section.education h2, .contact-us h2{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .contact-us .contact-body{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 992px){
+    .nav-logo{
+        display: inline-flex;
+        width: 180px;
+    }
+    .nav-container{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .home-content h2{
+        font-size: 2.5rem;
+    }
+    .home-content a{
+        width: 10%;
+    }
+    .my-story{
+        width: 70%;
+        padding: 2%;
+    }
+    section#about-me{
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .skill-status{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skill-status div.skill-list{
+        height: 80%;
+        width: 49%;
+    }
+}
+@media (min-width: 1200px){
+    .school-status{
+        flex-direction: row;
+    }
+    div.school-status div{
+        width: 31%;
+    }
+    .contact-us{
+        padding: 30px 130px;
+    }
+
+}
